@@ -160,6 +160,9 @@ body {
 @media (max-width: 900px) {
   .menu-toggle { display: inline-flex; flex-direction: column; gap: 4px; background: transparent; border: none; }
   .menu-toggle span { width: 22px; height: 2px; background: var(--text); opacity: 0.85; }
+  .site-nav { position: fixed; inset: 72px 0 auto 0; background: rgba(13,17,23,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 24px; gap: 12px; display: none; }
+  .site-nav.open { display: flex; flex-direction: column; }
+  .site-nav a { padding: 10px 0; }
 }
 @media (max-width: 560px) {
   .section { padding: 56px 0; }
