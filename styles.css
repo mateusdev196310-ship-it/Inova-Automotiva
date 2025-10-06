@@ -94,7 +94,7 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
 .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; }
 .logo-mark { filter: drop-shadow(0 0 8px rgba(0,209,255,0.35)); }
 .site-nav { display: flex; align-items: center; gap: 22px; }
-.site-nav a { color: var(--text); text-decoration: none; opacity: 0.95; padding: 8px 10px; }
+.site-nav a { color: var(--text); text-decoration: none; opacity: 0.95; padding: 8px 10px; white-space: nowrap; }
 .menu-toggle { display: none; }
 
 /* Hero fotográfico */
@@ -136,20 +136,20 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
 .contact-item strong { color: var(--text); }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--border); padding: 36px 0; background: var(--bg-alt); }
+.site-footer { border-top: 1px solid var(--border); padding: 40px 0; background: var(--bg-alt); }
 .site-footer .container { display: block; }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 20px; align-items: start; }
-.footer-col h4 { margin: 0 0 8px; font-size: 1rem; }
-.footer-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 28px; align-items: start; }
+.footer-col h4 { margin: 0 0 12px; font-size: 1rem; }
+.footer-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .footer-col.brand p { color: var(--muted); margin: 6px 0 12px; }
 .footer-list a[aria-disabled="true"] { cursor: not-allowed; opacity: 0.6; pointer-events: none; text-decoration: none; }
 
 /* Buttons */
 .btn, .site-nav a, .menu-toggle, .contact-item { cursor: pointer; user-select: none; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 1px solid var(--border); background: var(--card); color: var(--text); box-shadow: 0 8px 20px rgba(0,0,0,0.25); transition: transform .15s ease, box-shadow .15s ease, filter .15s ease; }
-.btn-cta { background: linear-gradient(90deg, var(--neon), var(--neon-strong)); color: #0a0c0f; border: none; box-shadow: 0 8px 26px rgba(0,209,255,0.35); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 1px solid var(--border); background: var(--card); color: var(--text); box-shadow: 0 8px 20px rgba(0,0,0,0.25); transition: transform .15s ease, box-shadow .15s ease, filter .15s ease; line-height: 1; text-align: center; white-space: nowrap; min-height: 40px; }
+.btn-cta { background: linear-gradient(90deg, var(--neon), var(--neon-strong)); color: #0a0c0f; border: none; box-shadow: 0 8px 26px rgba(0,209,255,0.35); letter-spacing: 0.15px; }
 .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
-.btn.big { padding: 12px 20px; font-size: 1.05rem; }
+.btn.big { padding: 12px 20px; font-size: 1.05rem; min-height: 46px; }
 .btn:hover { transform: translateY(-1px); filter: brightness(1.05); text-decoration: none; }
 .btn:active { transform: translateY(0); filter: none; }
 .btn:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
@@ -175,7 +175,7 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
   .menu-toggle span { width: 22px; height: 2px; background: var(--text); opacity: 0.85; }
   .site-nav { position: fixed; inset: 72px 0 auto 0; background: rgba(13,17,23,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 24px; gap: 12px; display: none; }
   .site-nav.open { display: flex; flex-direction: column; }
-  .site-nav a { padding: 10px 0; }
+  .site-nav a { padding: 10px 0; white-space: nowrap; }
 
   /* Hero ajustes para tablets */
   .hero-content { padding: 60px 18px; }
@@ -198,7 +198,7 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
   .nav-container { height: 60px; }
   .site-nav { position: fixed; inset: 60px 0 auto 0; background: rgba(13,17,23,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 24px; gap: 12px; display: none; }
   .site-nav.open { display: flex; flex-direction: column; }
-  .site-nav a { padding: 10px 0; }
+  .site-nav a { padding: 10px 0; white-space: nowrap; }
 
   /* Tipografia e hero em mobile */
   .section-title { font-size: 1.6rem; }
