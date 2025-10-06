@@ -136,6 +136,7 @@ body {
 .footer-col h4 { margin: 0 0 8px; font-size: 1rem; }
 .footer-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .footer-col.brand p { color: var(--muted); margin: 6px 0 12px; }
+.footer-list a[aria-disabled="true"] { cursor: not-allowed; opacity: 0.6; pointer-events: none; text-decoration: none; }
 
 /* Buttons */
 .btn, .site-nav a, .menu-toggle, .contact-item { cursor: pointer; user-select: none; }
