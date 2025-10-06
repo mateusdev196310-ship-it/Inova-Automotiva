@@ -176,6 +176,22 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
   .site-nav { position: fixed; inset: 72px 0 auto 0; background: rgba(13,17,23,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 24px; gap: 12px; display: none; }
   .site-nav.open { display: flex; flex-direction: column; }
   .site-nav a { padding: 10px 0; }
+
+  /* Hero ajustes para tablets */
+  .hero-content { padding: 60px 18px; }
+  .hero-content h1 { font-size: 2.4rem; }
+  .hero-content p { font-size: 1.05rem; }
+  .hero-ctas { flex-wrap: wrap; }
+
+  /* Grids responsivos sem afetar desktop */
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .grid.cards { grid-template-columns: 1fr 1fr; }
+  .grid.features { grid-template-columns: 1fr 1fr; }
+  .contact { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Ajuste de altura das imagens da galeria */
+  .gallery-img { height: 220px; }
 }
 @media (max-width: 560px) {
   .section { padding: 56px 0; }
@@ -183,6 +199,24 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
   .site-nav { position: fixed; inset: 60px 0 auto 0; background: rgba(13,17,23,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 24px; gap: 12px; display: none; }
   .site-nav.open { display: flex; flex-direction: column; }
   .site-nav a { padding: 10px 0; }
+
+  /* Tipografia e hero em mobile */
+  .section-title { font-size: 1.6rem; }
+  .hero-content { padding: 40px 16px; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+  .hero-ctas { flex-direction: column; }
+  .hero-ctas .btn { width: 100%; }
+
+  /* Grids colapsando em 1 coluna */
+  .gallery { grid-template-columns: 1fr; }
+  .grid.cards { grid-template-columns: 1fr; }
+  .grid.features { grid-template-columns: 1fr; }
+  .contact { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+
+  /* Imagens menores para caber em mobile */
+  .gallery-img { height: 180px; }
 }
 
 /* Sobre nós */
