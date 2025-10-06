@@ -150,7 +150,7 @@ a:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; border-ra
 .btn-cta { background: linear-gradient(90deg, var(--neon), var(--neon-strong)); color: #0a0c0f; border: none; box-shadow: 0 8px 26px rgba(0,209,255,0.35); }
 .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
 .btn.big { padding: 12px 20px; font-size: 1.05rem; }
-.btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+.btn:hover { transform: translateY(-1px); filter: brightness(1.05); text-decoration: none; }
 .btn:active { transform: translateY(0); filter: none; }
 .btn:focus-visible { outline: 2px solid var(--neon); outline-offset: 2px; }
 
